@@ -1,5 +1,3 @@
-import "./global/global.css";
-
 function App() {
   return (
     <>
