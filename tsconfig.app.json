@@ -12,8 +12,12 @@
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": true,
     "jsx": "react-jsx",
+
+    /* Geração de Tipos */
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "dist/index.d.ts",
 
     /* Linting */
     "strict": true,
