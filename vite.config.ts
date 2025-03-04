@@ -9,7 +9,13 @@ const __dirname = path.dirname(__filename);
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), dts({ insertTypesEntry: true })],
+  plugins: [
+    react(),
+    dts({
+      insertTypesEntry: true,
+      rollupTypes: true,
+    }),
+  ],
   build: {
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"),
