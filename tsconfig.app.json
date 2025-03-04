@@ -17,7 +17,6 @@
     /* Geração de Tipos */
     "declaration": true,
     "emitDeclarationOnly": true,
-    "outDir": "dist/index.d.ts",
 
     /* Linting */
     "strict": true,
