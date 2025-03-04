@@ -34,3 +34,5 @@ test-results/
 
 # Arquivos do Vitest (se houver geração de relatórios de cobertura)
 coverage/
+
+*storybook.log
