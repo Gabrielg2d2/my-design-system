@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react'
 import {
 	ExemploComponent,
 	type TExemploComponentProps,
-} from "../../src/components/ExemploComponent";
+} from '../../src/components/ExemploComponent'
 
 export default {
-	title: "ExemploComponent",
+	title: 'ExemploComponent',
 	component: ExemploComponent,
-};
+}
 
 export const Default = (args: TExemploComponentProps) => (
 	<ExemploComponent {...args} />
-);
+)
