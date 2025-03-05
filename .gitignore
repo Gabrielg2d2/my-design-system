@@ -31,3 +31,5 @@ package-lock.json
 
 # d.ts files
 src/**/*.d.ts
+stories/components/**/*.d.ts
+stories/exemplos/**/*.d.ts
