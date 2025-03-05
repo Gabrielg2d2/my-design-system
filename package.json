@@ -23,12 +23,8 @@
     "coverage": "vitest run --coverage"
   },
   "peerDependencies": {
-    "@tailwindcss/postcss": "4.0.9",
-    "@tailwindcss/vite": "4.0.9",
-    "postcss": "8.5.3",
     "react": "19.0.0",
-    "react-dom": "19.0.0",
-    "tailwindcss": "4.0.9"
+    "react-dom": "19.0.0"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
@@ -43,8 +39,6 @@
     "@storybook/react-vite": "8.6.3",
     "@storybook/test": "8.6.3",
     "@storybook/theming": "8.6.3",
-    "@tailwindcss/postcss": "4.0.9",
-    "@tailwindcss/vite": "4.0.9",
     "@types/node": "^22.13.9",
     "@types/path-browserify": "^1.0.3",
     "@types/react": "19.0.10",
@@ -56,11 +50,9 @@
     "globals": "16.0.0",
     "path-browserify": "^1.0.1",
     "playwright": "1.50.1",
-    "postcss": "8.5.3",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "storybook": "8.6.3",
-    "tailwindcss": "4.0.9",
     "typescript": "5.8.2",
     "vite": "6.2.0",
     "vite-plugin-dts": "^4.5.3",
