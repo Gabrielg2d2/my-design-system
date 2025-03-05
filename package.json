@@ -5,7 +5,11 @@
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
 	"types": "dist/index.d.ts",
-	"files": ["dist"],
+	"files": [
+		"dist",
+		"README.md",
+		"package.json"
+	],
 	"scripts": {
 		"build": "tsc -b && vite build",
 		"storybook": "storybook dev -p 6006",
@@ -21,9 +25,9 @@
 		"coverage": "vitest run --coverage"
 	},
 	"peerDependencies": {
+		"@radix-ui/themes": "3.2.1",
 		"react": "19.0.0",
-		"react-dom": "19.0.0",
-		"@radix-ui/themes": "3.2.1"
+		"react-dom": "19.0.0"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
