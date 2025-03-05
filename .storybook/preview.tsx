@@ -6,7 +6,7 @@ import React from 'react';
 
 const withThemeProvider = (story) => (
   <Theme>
-    {story()}
+      {story()}
   </Theme>
 );
 
