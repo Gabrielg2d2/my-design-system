@@ -8,9 +8,14 @@ export default {
 	argTypes: {
 		value: { control: 'text' },
 		placeholder: { control: 'text' },
+		defaultValue: { control: 'text' },
 		variant: {
 			control: 'select',
-			options: ['soft', 'classic', 'surface'] as TInputProps['variant'][],
+			options: [
+				'soft',
+				'classic',
+				'surface',
+			] satisfies TInputProps['variant'][],
 		},
 		color: {
 			control: 'select',
