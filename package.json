@@ -2,9 +2,9 @@
 	"name": "my-desing-system",
 	"version": "0.1.0",
 	"type": "module",
-	"main": "dist/index.js",
-	"module": "dist/index.mjs",
-	"types": "dist/index.d.ts",
+	"main": "dist/index.cjs.js",
+  	"module": "dist/index.es.js",
+  	"types": "dist/index.d.ts",
 	"files": [
 		"dist",
 		"README.md",
