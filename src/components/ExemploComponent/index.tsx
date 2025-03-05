@@ -1,13 +1,19 @@
+import { Button, Flex, Text } from "@radix-ui/themes";
+
+
 export type TExemploComponentProps = {
 	title: string
 }
 
 export function ExemploComponent({
-	title = 'Hello world!',
+	title = 'Hello',
 }: TExemploComponentProps) {
 	return (
-		<div>
-			<h1 className="text-3xl font-bold underline">{title}</h1>
-		</div>
+		
+		<Flex direction="column" gap="2" align="center">
+			<Text>{`${title} from Radix Themes :)`}</Text>
+			<Button>Let's go</Button>
+		</Flex>
+		
 	)
 }
