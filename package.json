@@ -15,7 +15,8 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "prepublishOnly": "rm -rf dist && npm run build"
+    "clean:dts": "find src -name '*.d.ts' -type f -delete",
+    "prepublishOnly": "rm -rf dist && npm run build && npm run clean:dts"
   },
   "peerDependencies": {
     "@tailwindcss/postcss": "4.0.9",
