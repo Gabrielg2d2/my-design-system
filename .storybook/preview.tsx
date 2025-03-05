@@ -3,13 +3,28 @@ import "@radix-ui/themes/styles.css";
 import type { Preview } from '@storybook/react';
 import { themes } from '@storybook/theming';
 import { Decorator } from '@storybook/react';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import "../src/theme/light.css"; 
+import "../src/theme/dark.css";  
 
-const withThemeDecorator: Decorator = (Story) => (
-  <Theme accentColor='yellow'>
-    <Story />
-  </Theme>
-);
+
+const withThemeDecorator: Decorator = (Story, context) => {
+  const [theme, setTheme] = useState("light");
+
+  useEffect(() => {
+    const storybookTheme = context.globals.theme;
+    setTheme(storybookTheme);
+    document.documentElement.classList.remove("light", "dark");
+    document.documentElement.classList.add(storybookTheme);
+  }, [context.globals.theme]);
+
+  return (
+    <Theme accentColor='yellow' className={theme}>
+      <Story />
+    </Theme>
+  );
+};
+
 
 const preview: Preview = {
 	decorators: [withThemeDecorator],
@@ -20,8 +35,8 @@ const preview: Preview = {
 		backgrounds: {
 			default: 'Dark',
 			values: [
-				{ name: 'Dark', value: '#333' },
-				{ name: 'Light', value: '#F7F9F2' },
+				{ name: "Dark", value: "#111" },
+        		{ name: "Light", value: "#EFECEC" },
 				{ name: 'Green', value: '#228B22' },
 			],
 		},
@@ -32,6 +47,21 @@ const preview: Preview = {
 			},
 		},
 	},
+	globalTypes: {
+    theme: {
+      name: "Theme",
+      description: "Choose between light and dark theme",
+      defaultValue: "light",
+      toolbar: {
+        icon: "circlehollow",
+        items: [
+          { value: "light", title: "Light Mode" },
+          { value: "dark", title: "Dark Mode" },
+        ],
+        showName: true,
+      },
+    },
+  },
 }
 
 export default preview
