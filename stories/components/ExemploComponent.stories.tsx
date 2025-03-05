@@ -1,4 +1,8 @@
-import { ExemploComponent, TExemploComponentProps } from ".";
+import React from "react";
+import {
+  ExemploComponent,
+  TExemploComponentProps,
+} from "../../src/components/ExemploComponent";
 
 export default {
   title: "ExemploComponent",
