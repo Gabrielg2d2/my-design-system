@@ -30,4 +30,4 @@ package-lock.json
 *storybook.log
 
 # d.ts files
-*.d.ts
+src/**/*.d.ts
