@@ -12,3 +12,7 @@ export default {
 export const Default = (args: TExemploComponentProps) => (
 	<ExemploComponent {...args} />
 )
+
+Default.args = {
+	title: 'Hello',
+}
