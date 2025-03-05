@@ -2,17 +2,18 @@ import { Theme } from "@radix-ui/themes";
 import "@radix-ui/themes/styles.css";
 import type { Preview } from '@storybook/react';
 import { themes } from '@storybook/theming';
+import { Decorator } from '@storybook/react';
 import React from 'react';
 
-const withThemeProvider = (story) => (
+const withThemeDecorator: Decorator = (Story) => (
   <Theme>
-      {story()}
+    <Story />
   </Theme>
 );
 
 const preview: Preview = {
+	decorators: [withThemeDecorator],
 	parameters: {
-		decorators: [withThemeProvider],
 		docs: {
 			theme: themes.dark,
 		},
