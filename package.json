@@ -9,9 +9,7 @@
     "dist"
   ],
   "scripts": {
-    "dev": "vite",
     "build": "tsc -b && vite build",
-    "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "clean:dts": "find src -name '*.d.ts' -type f -delete",
