@@ -14,11 +14,11 @@
     "build-storybook": "storybook build",
     "clean:dts": "find src -name '*.d.ts' -type f -delete",
     "prepublishOnly": "rm -rf dist && npm run build && npm run clean:dts",
-    "format": "npx @biomejs/biome format --write ./src",
-    "lint": "npx @biomejs/biome lint --write ./src",
-    "check": "npx @biomejs/biome check --write ./src",
+    "format": "npx @biomejs/biome format --write ./src ./stories",
+    "lint": "npx @biomejs/biome lint --write ./src ./stories",
+    "check": "npx @biomejs/biome check --write ./src ./stories",
     "validate": "npm run format && npm run lint && npm run check",
-    "ci": "npx @biomejs/biome ci ./src"
+    "ci": "npx @biomejs/biome ci ./src ./stories"
   },
   "peerDependencies": {
     "@tailwindcss/postcss": "4.0.9",
