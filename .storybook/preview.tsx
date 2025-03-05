@@ -6,7 +6,7 @@ import { Decorator } from '@storybook/react';
 import React from 'react';
 
 const withThemeDecorator: Decorator = (Story) => (
-  <Theme>
+  <Theme accentColor='yellow'>
     <Story />
   </Theme>
 );
