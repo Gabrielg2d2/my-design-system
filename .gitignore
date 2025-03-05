@@ -26,4 +26,8 @@ dist-ssr
 # Package files
 package-lock.json
 
+# Storybook
 *storybook.log
+
+# d.ts files
+*.d.ts
