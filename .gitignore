@@ -32,3 +32,6 @@ package-lock.json
 src/**/*.d.ts
 stories/components/**/*.d.ts
 stories/exemplos/**/*.d.ts
+
+# Test files
+coverage
