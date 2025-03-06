@@ -27,12 +27,6 @@ const meta: Meta<TButtonIconProps> = {
 export default meta
 type Story = StoryObj<TButtonIconProps>
 
-export const Default: Story = {
-	render: (args) => {
-		return <ButtonIcon {...args}>Text Button</ButtonIcon>
-	},
-}
-
 export const Disabled: Story = {
 	args: {
 		disabled: true,
