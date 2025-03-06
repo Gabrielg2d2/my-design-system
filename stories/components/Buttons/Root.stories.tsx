@@ -16,4 +16,14 @@ const meta: Meta<TButtonProps> = {
 export default meta
 type Story = StoryObj<TButtonProps>
 
-export const Default: Story = {}
+export const Default: Story = {
+	argTypes: {
+		size: {
+			options: ['1', '2', '3', '4'] satisfies TButtonProps['size'][],
+			control: { type: 'select' },
+		},
+	},
+	args: {
+		size: '3',
+	},
+}
