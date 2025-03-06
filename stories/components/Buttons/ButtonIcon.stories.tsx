@@ -1,4 +1,3 @@
-import { Box } from '@radix-ui/themes'
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 import {
