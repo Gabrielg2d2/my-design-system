@@ -4,7 +4,7 @@ export type TButtonProps = ButtonProps
 
 export function ButtonRoot(props: TButtonProps) {
 	return (
-		<Button size="1" variant="soft" {...props}>
+		<Button size="3" variant="classic" {...props}>
 			{props.children}
 		</Button>
 	)
