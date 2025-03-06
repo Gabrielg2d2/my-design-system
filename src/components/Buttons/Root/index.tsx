@@ -4,6 +4,7 @@ export type TButtonRootProps = ButtonProps & {
 	fullWidth?: boolean
 	width?: number
 	maxWidth?: number
+	propsStyle?: React.CSSProperties
 }
 
 export function ButtonRoot(props: TButtonRootProps) {
@@ -14,6 +15,7 @@ export function ButtonRoot(props: TButtonRootProps) {
 			style={{
 				width: props.fullWidth ? '100%' : props.width,
 				maxWidth: props.fullWidth ? '100%' : props.maxWidth,
+				...props.propsStyle,
 			}}
 			{...props}
 		>

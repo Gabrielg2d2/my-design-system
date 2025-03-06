@@ -47,6 +47,23 @@ export const IconLeft: Story = {
 	},
 }
 
+export const SpaceBetween: Story = {
+	render: (args) => {
+		return (
+			<ButtonIcon
+				{...args}
+				width={500}
+				iconLeft={<BookmarkIcon />}
+				propsStyle={{
+					justifyContent: 'space-between',
+				}}
+			>
+				Text Button
+			</ButtonIcon>
+		)
+	},
+}
+
 export const IconLeftLoading: Story = {
 	render: (args) => {
 		return (
