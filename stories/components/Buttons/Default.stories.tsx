@@ -51,25 +51,13 @@ export const Outline: Story = {
 }
 
 export const Loading: Story = {
-    args: {
-        size: "3",
-        variant: "outline",
-        color: "yellow",
-        radius: "small",
-        loading: true,
-        disabled: false,
-        highContrast: false
-    }
-};
+	args: {
+		loading: true,
+	},
+}
 
 export const Disabled: Story = {
-    args: {
-        size: "3",
-        variant: "classic",
-        color: "yellow",
-        radius: "small",
-        loading: false,
-        disabled: true,
-        highContrast: false
-    }
-};
+	args: {
+		disabled: true,
+	},
+}
