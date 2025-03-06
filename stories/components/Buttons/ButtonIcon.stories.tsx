@@ -72,3 +72,32 @@ export const IconRightLoading: Story = {
 		)
 	},
 }
+
+export const IconLeftAndRight: Story = {
+	render: (args) => {
+		return (
+			<ButtonIcon
+				{...args}
+				iconLeft={<BookmarkIcon />}
+				iconRight={<BookmarkIcon />}
+			>
+				Text Button
+			</ButtonIcon>
+		)
+	},
+}
+
+export const IconLeftAndRightLoading: Story = {
+	render: (args) => {
+		return (
+			<ButtonIcon
+				{...args}
+				loadingIcon
+				iconLeft={<BookmarkIcon />}
+				iconRight={<BookmarkIcon />}
+			>
+				Text Button
+			</ButtonIcon>
+		)
+	},
+}
