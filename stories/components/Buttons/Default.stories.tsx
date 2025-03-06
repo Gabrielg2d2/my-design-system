@@ -25,3 +25,9 @@ export default meta
 type Story = StoryObj<TButtonDefaultProps>
 
 export const Default: Story = {}
+
+export const Solid: Story = {
+	args: {
+		variant: 'solid',
+	},
+}
