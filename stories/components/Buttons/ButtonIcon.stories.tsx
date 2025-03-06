@@ -101,3 +101,20 @@ export const IconLeftAndRightLoading: Story = {
 		)
 	},
 }
+
+export const Disabled: Story = {
+    args: {
+        size: "3",
+        variant: "classic",
+        color: "yellow",
+        radius: "small",
+        loading: false,
+        disabled: true,
+        highContrast: false,
+        loadingIcon: false
+    },
+
+    render: args => {
+        return <ButtonIcon {...args}>Text Button</ButtonIcon>;
+    }
+};
