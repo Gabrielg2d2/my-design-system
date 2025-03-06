@@ -48,3 +48,9 @@ export const RedSoft: Story = {
 		variant: 'soft',
 	},
 }
+
+export const Disabled: Story = {
+	args: {
+		disabled: true,
+	},
+}
