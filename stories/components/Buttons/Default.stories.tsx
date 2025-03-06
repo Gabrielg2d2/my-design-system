@@ -62,6 +62,13 @@ export const Disabled: Story = {
 	},
 }
 
+export const DisabledAndLoading: Story = {
+	args: {
+		disabled: true,
+		loading: true,
+	},
+}
+
 export const HighContrast: Story = {
 	args: {
 		highContrast: true,
