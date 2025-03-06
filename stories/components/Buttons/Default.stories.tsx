@@ -31,3 +31,9 @@ export const Solid: Story = {
 		variant: 'solid',
 	},
 }
+
+export const Soft: Story = {
+	args: {
+		variant: 'soft',
+	},
+}
