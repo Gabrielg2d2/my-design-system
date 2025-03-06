@@ -43,3 +43,9 @@ export const Surface: Story = {
 		variant: 'surface',
 	},
 }
+
+export const Outline: Story = {
+	args: {
+		variant: 'outline',
+	},
+}
