@@ -2,18 +2,18 @@ import { Box } from '@radix-ui/themes'
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 import {
-	InputDefault,
-	type TInputDefaultProps,
-} from '../../../src/components/Inputs/Default'
+	InputIcon,
+	type TInputIconProps,
+} from '../../../src/components/Inputs/InputIcon'
 
 import * as RootStories from './Root.stories'
 
-const meta: Meta<TInputDefaultProps> = {
+const meta: Meta<TInputIconProps> = {
 	title: 'Inputs/Icon',
-	component: (args: TInputDefaultProps) => {
+	component: (args: TInputIconProps) => {
 		return (
 			<Box maxWidth="800px">
-				<InputDefault {...args} />
+				<InputIcon {...args} />
 			</Box>
 		)
 	},
@@ -26,6 +26,6 @@ const meta: Meta<TInputDefaultProps> = {
 }
 
 export default meta
-type Story = StoryObj<TInputDefaultProps>
+type Story = StoryObj<TInputIconProps>
 
 export const Primary: Story = {}
