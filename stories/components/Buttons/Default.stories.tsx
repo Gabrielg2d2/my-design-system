@@ -49,3 +49,15 @@ export const Outline: Story = {
 		variant: 'outline',
 	},
 }
+
+export const Loading: Story = {
+    args: {
+        size: "3",
+        variant: "outline",
+        color: "yellow",
+        radius: "small",
+        loading: true,
+        disabled: false,
+        highContrast: false
+    }
+};
