@@ -17,37 +17,28 @@ const meta: Meta<TInputDefaultProps> = {
 			</Box>
 		)
 	},
+	argTypes: {
+		...RootStories.Default.argTypes,
+	},
+	args: {
+		...RootStories.Default.args,
+	},
 }
 
 export default meta
 type Story = StoryObj<TInputDefaultProps>
 
-export const Primary: Story = {
-	args: {
-		...RootStories.Default.args,
-	},
-	argTypes: {
-		...RootStories.Default.argTypes,
-	},
-}
+export const Primary: Story = {}
 
 export const PrimarySoft: Story = {
 	args: {
-		...RootStories.Default.args,
 		variant: 'soft',
-	},
-	argTypes: {
-		...RootStories.Default.argTypes,
 	},
 }
 
 export const Red: Story = {
 	args: {
-		...RootStories.Default.args,
 		color: 'red',
-	},
-	argTypes: {
-		...RootStories.Default.argTypes,
 	},
 }
 
@@ -55,8 +46,5 @@ export const RedSoft: Story = {
 	args: {
 		...Red.args,
 		variant: 'soft',
-	},
-	argTypes: {
-		...RootStories.Default.argTypes,
 	},
 }
