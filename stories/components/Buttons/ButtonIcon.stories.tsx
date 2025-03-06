@@ -6,13 +6,11 @@ import {
 	type TButtonIconProps,
 } from '../../../src/components/Buttons/ButtonIcon'
 
+import { BookmarkIcon } from '@radix-ui/react-icons'
 import * as RootStories from './Root.stories'
 
 const meta: Meta<TButtonIconProps> = {
 	title: 'Buttons/ButtonIcon',
-	component: (args: TButtonIconProps) => {
-		return <ButtonIcon {...args}>Text Button</ButtonIcon>
-	},
 	argTypes: {
 		...RootStories.Default.argTypes,
 		loadingIcon: {
@@ -30,4 +28,48 @@ const meta: Meta<TButtonIconProps> = {
 export default meta
 type Story = StoryObj<TButtonIconProps>
 
-export const Default: Story = {}
+export const Default: Story = {
+	render: (args) => {
+		return <ButtonIcon {...args}>Text Button</ButtonIcon>
+	},
+}
+
+export const IconLeft: Story = {
+	render: (args) => {
+		return (
+			<ButtonIcon {...args} iconLeft={<BookmarkIcon />}>
+				Text Button
+			</ButtonIcon>
+		)
+	},
+}
+
+export const IconLeftLoading: Story = {
+	render: (args) => {
+		return (
+			<ButtonIcon {...args} loadingIcon iconLeft={<BookmarkIcon />}>
+				Text Button
+			</ButtonIcon>
+		)
+	},
+}
+
+export const IconRight: Story = {
+	render: (args) => {
+		return (
+			<ButtonIcon {...args} iconRight={<BookmarkIcon />}>
+				Text Button
+			</ButtonIcon>
+		)
+	},
+}
+
+export const IconRightLoading: Story = {
+	render: (args) => {
+		return (
+			<ButtonIcon {...args} loadingIcon iconRight={<BookmarkIcon />}>
+				Text Button
+			</ButtonIcon>
+		)
+	},
+}
