@@ -1,2 +1,1 @@
-export * from './ExemploComponent'
-export * from './Input'
+export * from './Inputs/Default'

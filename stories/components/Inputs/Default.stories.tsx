@@ -1,10 +1,13 @@
 import { Box } from '@radix-ui/themes'
 import React from 'react'
-import { Input, type TInputProps } from '../../../src/components/Input'
+import {
+	InputDefault,
+	type TInputDefaultProps,
+} from '../../../src/components/Inputs/Default'
 
 export default {
-	title: 'Input',
-	component: Input,
+	title: 'Inputs/Default',
+	component: InputDefault,
 	argTypes: {
 		value: { control: 'text' },
 		placeholder: { control: 'text' },
@@ -15,7 +18,7 @@ export default {
 				'soft',
 				'classic',
 				'surface',
-			] satisfies TInputProps['variant'][],
+			] satisfies TInputDefaultProps['variant'][],
 		},
 		color: {
 			control: 'select',
@@ -27,15 +30,23 @@ export default {
 				'purple',
 				'gray',
 				'violet',
-			] as TInputProps['color'][],
+			] as TInputDefaultProps['color'][],
 		},
 	},
 }
 
-export const Default = (args: TInputProps) => {
+export const Default = (args: TInputDefaultProps) => {
 	return (
 		<Box maxWidth="800px">
-			<Input {...args} />
+			<InputDefault {...args} />
+		</Box>
+	)
+}
+
+export const Red = (args: TInputDefaultProps) => {
+	return (
+		<Box maxWidth="800px">
+			<InputDefault {...args} />
 		</Box>
 	)
 }
