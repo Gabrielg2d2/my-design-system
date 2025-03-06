@@ -43,11 +43,16 @@ export const Default: Story = {
 		},
 		disabled: { control: 'boolean' },
 		autoFocus: { control: 'boolean' },
+		size: {
+			control: { type: 'radio' },
+			options: ['1', '2', '3'] satisfies TInputRootProps['size'][],
+		},
 	},
 	args: {
 		placeholder: 'Placeholder here...',
 		variant: 'surface',
 		disabled: false,
 		autoFocus: false,
+		size: '3',
 	},
 }
