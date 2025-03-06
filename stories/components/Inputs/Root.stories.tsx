@@ -30,6 +30,7 @@ export default {
 				'purple',
 				'gray',
 				'violet',
+				'pink',
 			] as TInputRootProps['color'][],
 		},
 	},
