@@ -65,7 +65,7 @@ export const Default: Story = {
 		size: '3',
 		variant: 'classic',
 		color: 'yellow',
-		radius: 'none',
+		radius: 'small',
 		loading: false,
 		disabled: false,
 		highContrast: false,
