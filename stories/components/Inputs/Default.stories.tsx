@@ -42,7 +42,6 @@ const meta: Meta<TInputDefaultProps> = {
 	},
 	args: {
 		placeholder: 'Placeholder here...',
-		variant: 'surface',
 	},
 }
 

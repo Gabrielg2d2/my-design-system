@@ -1,13 +1,20 @@
 import { Box } from '@radix-ui/themes'
+import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 import {
 	InputRoot,
 	type TInputRootProps,
 } from '../../../src/components/Inputs/Root'
 
-export default {
+const meta: Meta<TInputRootProps> = {
 	title: 'Inputs/Root',
-	component: InputRoot,
+	component: (args: TInputRootProps) => {
+		return (
+			<Box maxWidth="800px">
+				<InputRoot {...args} />
+			</Box>
+		)
+	},
 	argTypes: {
 		value: { control: 'text' },
 		placeholder: { control: 'text' },
@@ -29,21 +36,16 @@ export default {
 				'yellow',
 				'purple',
 				'gray',
-				'violet',
 				'pink',
 			] as TInputRootProps['color'][],
 		},
 	},
+	args: {
+		placeholder: 'Placeholder here...',
+	},
 }
 
-export const Default = (args: TInputRootProps) => {
-	return (
-		<Box maxWidth="800px">
-			<InputRoot {...args} />
-		</Box>
-	)
-}
+export default meta
+type Story = StoryObj<TInputRootProps>
 
-Default.args = {
-	placeholder: 'Placeholder here...',
-}
+export const Default: Story = {}
