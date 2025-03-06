@@ -54,3 +54,9 @@ export const Disabled: Story = {
 		disabled: true,
 	},
 }
+
+export const DefaultValue: Story = {
+	args: {
+		defaultValue: 'Default value here',
+	},
+}
