@@ -42,6 +42,7 @@ export const Default: Story = {
 			] as TInputRootProps['color'][],
 		},
 		disabled: { control: 'boolean' },
+		autoFocus: { control: 'boolean' },
 	},
 	args: {
 		placeholder: 'Placeholder here...',

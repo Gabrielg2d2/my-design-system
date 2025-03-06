@@ -60,3 +60,9 @@ export const DefaultValue: Story = {
 		defaultValue: 'Default value here',
 	},
 }
+
+export const AutoFocus: Story = {
+	args: {
+		autoFocus: true,
+	},
+}
