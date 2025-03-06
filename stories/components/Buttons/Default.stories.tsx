@@ -37,3 +37,9 @@ export const Soft: Story = {
 		variant: 'soft',
 	},
 }
+
+export const Surface: Story = {
+	args: {
+		variant: 'surface',
+	},
+}
