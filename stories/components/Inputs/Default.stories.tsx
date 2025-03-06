@@ -33,14 +33,21 @@ export const Primary: Story = {
 
 export const PrimarySoft: Story = {
 	args: {
-		...Primary.args,
+		...RootStories.Default.args,
 		variant: 'soft',
+	},
+	argTypes: {
+		...RootStories.Default.argTypes,
 	},
 }
 
 export const Red: Story = {
 	args: {
+		...RootStories.Default.args,
 		color: 'red',
+	},
+	argTypes: {
+		...RootStories.Default.argTypes,
 	},
 }
 
@@ -48,5 +55,8 @@ export const RedSoft: Story = {
 	args: {
 		...Red.args,
 		variant: 'soft',
+	},
+	argTypes: {
+		...RootStories.Default.argTypes,
 	},
 }
