@@ -1,4 +1,3 @@
-import { BookmarkIcon } from '@radix-ui/react-icons'
 import { Spinner } from '@radix-ui/themes'
 import { ButtonRoot, type TButtonRootProps } from '../Root'
 
@@ -11,10 +10,13 @@ export type TButtonIconProps = TButtonRootProps & {
 export function ButtonIcon(props: TButtonIconProps) {
 	return (
 		<ButtonRoot size="3" variant="classic" {...props}>
-			<Spinner loading={props.loadingIcon}>
-				<BookmarkIcon />
-			</Spinner>
+			{props.iconLeft && (
+				<Spinner loading={props.loadingIcon}>{props.iconLeft}</Spinner>
+			)}
 			{props.children}
+			{props.iconRight && (
+				<Spinner loading={props.loadingIcon}>{props.iconRight}</Spinner>
+			)}
 		</ButtonRoot>
 	)
 }
