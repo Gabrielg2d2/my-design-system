@@ -48,5 +48,6 @@ export const Default: Story = {
 		placeholder: 'Placeholder here...',
 		variant: 'surface',
 		disabled: false,
+		autoFocus: false,
 	},
 }
