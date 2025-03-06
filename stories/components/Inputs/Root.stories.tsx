@@ -11,6 +11,12 @@ const meta: Meta<TInputRootProps> = {
 	component: (args: TInputRootProps) => {
 		return <InputRoot {...args} />
 	},
+}
+
+export default meta
+type Story = StoryObj<TInputRootProps>
+
+export const Default: Story = {
 	argTypes: {
 		value: { control: 'text' },
 		placeholder: { control: 'text' },
@@ -40,10 +46,6 @@ const meta: Meta<TInputRootProps> = {
 	args: {
 		placeholder: 'Placeholder here...',
 		variant: 'surface',
+		disabled: false,
 	},
 }
-
-export default meta
-type Story = StoryObj<TInputRootProps>
-
-export const Default: Story = {}
