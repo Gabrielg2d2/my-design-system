@@ -22,8 +22,29 @@ export const Default: Story = {
 			options: ['1', '2', '3', '4'] satisfies TButtonProps['size'][],
 			control: { type: 'select' },
 		},
+		variant: {
+			options: [
+				'classic',
+				'solid',
+				'soft',
+				'surface',
+				'outline',
+			] satisfies TButtonProps['variant'][],
+			control: { type: 'select' },
+		},
+		color: {
+			options: [
+				'gray',
+				'yellow',
+				'blue',
+				'red',
+				'green',
+			] satisfies TButtonProps['color'][],
+			control: { type: 'select' },
+		},
 	},
 	args: {
 		size: '3',
+		variant: 'classic',
 	},
 }
