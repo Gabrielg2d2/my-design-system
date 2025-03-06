@@ -60,6 +60,15 @@ export const Default: Story = {
 		highContrast: {
 			control: { type: 'boolean' },
 		},
+		fullWidth: {
+			control: { type: 'boolean' },
+		},
+		width: {
+			control: { type: 'range', min: 50, max: 1000 },
+		},
+		maxWidth: {
+			control: { type: 'range', min: 50, max: 1000 },
+		},
 	},
 	args: {
 		size: '3',
@@ -69,5 +78,6 @@ export const Default: Story = {
 		loading: false,
 		disabled: false,
 		highContrast: false,
+		fullWidth: false,
 	},
 }
