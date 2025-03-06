@@ -28,9 +28,9 @@ const meta: Meta<TInputDefaultProps> = {
 export default meta
 type Story = StoryObj<TInputDefaultProps>
 
-export const Primary: Story = {}
+export const Default: Story = {}
 
-export const PrimarySoft: Story = {
+export const DefaultSoft: Story = {
 	args: {
 		variant: 'soft',
 	},

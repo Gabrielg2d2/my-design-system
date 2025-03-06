@@ -2,23 +2,23 @@ import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 import {
 	ButtonRoot,
-	type TButtonProps,
+	type TButtonRootProps,
 } from '../../../src/components/Buttons/Root'
 
-const meta: Meta<TButtonProps> = {
+const meta: Meta<TButtonRootProps> = {
 	title: 'Buttons/Root',
-	component: (args: TButtonProps) => {
+	component: (args: TButtonRootProps) => {
 		return <ButtonRoot {...args}>Text Button</ButtonRoot>
 	},
 }
 
 export default meta
-type Story = StoryObj<TButtonProps>
+type Story = StoryObj<TButtonRootProps>
 
 export const Default: Story = {
 	argTypes: {
 		size: {
-			options: ['1', '2', '3', '4'] satisfies TButtonProps['size'][],
+			options: ['1', '2', '3', '4'] satisfies TButtonRootProps['size'][],
 			control: { type: 'select' },
 		},
 		variant: {
@@ -28,7 +28,7 @@ export const Default: Story = {
 				'soft',
 				'surface',
 				'outline',
-			] satisfies TButtonProps['variant'][],
+			] satisfies TButtonRootProps['variant'][],
 			control: { type: 'select' },
 		},
 		color: {
@@ -38,7 +38,7 @@ export const Default: Story = {
 				'blue',
 				'red',
 				'green',
-			] satisfies TButtonProps['color'][],
+			] satisfies TButtonRootProps['color'][],
 			control: { type: 'select' },
 		},
 		loading: {
@@ -54,7 +54,7 @@ export const Default: Story = {
 				'medium',
 				'large',
 				'full',
-			] satisfies TButtonProps['radius'][],
+			] satisfies TButtonRootProps['radius'][],
 			control: { type: 'select' },
 		},
 		highContrast: {

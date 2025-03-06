@@ -29,7 +29,7 @@ const meta: Meta<TInputIconProps> = {
 export default meta
 type Story = StoryObj<TInputIconProps>
 
-export const Primary: Story = {}
+export const Default: Story = {}
 
 export const IconLeft: Story = {
 	args: {
