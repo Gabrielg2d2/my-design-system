@@ -61,3 +61,15 @@ export const Loading: Story = {
         highContrast: false
     }
 };
+
+export const Disabled: Story = {
+    args: {
+        size: "3",
+        variant: "classic",
+        color: "yellow",
+        radius: "small",
+        loading: false,
+        disabled: true,
+        highContrast: false
+    }
+};
