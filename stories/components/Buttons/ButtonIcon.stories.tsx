@@ -15,9 +15,15 @@ const meta: Meta<TButtonIconProps> = {
 	},
 	argTypes: {
 		...RootStories.Default.argTypes,
+		loadingIcon: {
+			control: 'boolean',
+			description: 'Show loading icon',
+			defaultValue: false,
+		},
 	},
 	args: {
 		...RootStories.Default.args,
+		loadingIcon: false,
 	},
 }
 
