@@ -35,6 +35,7 @@ const meta: Meta<TInputRootProps> = {
 				'pink',
 			] as TInputRootProps['color'][],
 		},
+		disabled: { control: 'boolean' },
 	},
 	args: {
 		placeholder: 'Placeholder here...',
