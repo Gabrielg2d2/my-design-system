@@ -41,10 +41,29 @@ export const Default: Story = {
 			] satisfies TButtonProps['color'][],
 			control: { type: 'select' },
 		},
+		loading: {
+			control: { type: 'boolean' },
+		},
+		disabled: {
+			control: { type: 'boolean' },
+		},
+		radius: {
+			options: [
+				'none',
+				'small',
+				'medium',
+				'large',
+				'full',
+			] satisfies TButtonProps['radius'][],
+			control: { type: 'select' },
+		},
 	},
 	args: {
 		size: '3',
 		variant: 'classic',
 		color: 'yellow',
+		radius: 'none',
+		loading: false,
+		disabled: false,
 	},
 }
