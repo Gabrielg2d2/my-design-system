@@ -6,7 +6,7 @@ import {
 	type TInputIconProps,
 } from '../../../src/components/Inputs/InputIcon'
 
-import { DotsHorizontalIcon, MagnifyingGlassIcon } from '@radix-ui/react-icons'
+import { MagnifyingGlassIcon } from '@radix-ui/react-icons'
 import * as RootStories from './Root.stories'
 
 const meta: Meta<TInputIconProps> = {
