@@ -2,8 +2,8 @@ import { Button, type ButtonProps } from '@radix-ui/themes'
 
 export type TButtonRootProps = ButtonProps & {
 	fullWidth?: boolean
-	width?: string
-	maxWidth?: string
+	width?: number
+	maxWidth?: number
 }
 
 export function ButtonRoot(props: TButtonRootProps) {
@@ -13,7 +13,7 @@ export function ButtonRoot(props: TButtonRootProps) {
 			variant="classic"
 			style={{
 				width: props.fullWidth ? '100%' : props.width,
-				maxWidth: props.maxWidth,
+				maxWidth: props.fullWidth ? '100%' : props.maxWidth,
 			}}
 			{...props}
 		>
