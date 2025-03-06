@@ -57,6 +57,9 @@ export const Default: Story = {
 			] satisfies TButtonProps['radius'][],
 			control: { type: 'select' },
 		},
+		highContrast: {
+			control: { type: 'boolean' },
+		},
 	},
 	args: {
 		size: '3',
@@ -65,5 +68,6 @@ export const Default: Story = {
 		radius: 'none',
 		loading: false,
 		disabled: false,
+		highContrast: false,
 	},
 }
