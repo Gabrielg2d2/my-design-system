@@ -9,18 +9,14 @@ import {
 const meta: Meta<TInputRootProps> = {
 	title: 'Inputs/Root',
 	component: (args: TInputRootProps) => {
-		return (
-			<Box maxWidth="800px">
-				<InputRoot {...args} />
-			</Box>
-		)
+		return <InputRoot {...args} />
 	},
 	argTypes: {
 		value: { control: 'text' },
 		placeholder: { control: 'text' },
 		defaultValue: { control: 'text' },
 		variant: {
-			control: 'select',
+			control: { type: 'radio' },
 			options: [
 				'soft',
 				'classic',
@@ -42,6 +38,7 @@ const meta: Meta<TInputRootProps> = {
 	},
 	args: {
 		placeholder: 'Placeholder here...',
+		variant: 'surface',
 	},
 }
 
