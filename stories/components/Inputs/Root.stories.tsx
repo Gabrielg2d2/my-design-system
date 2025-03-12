@@ -1,10 +1,10 @@
-import { Box } from '@radix-ui/themes'
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 import {
 	InputRoot,
 	type TInputRootProps,
 } from '../../../src/components/Inputs/Root'
+import { getColors } from '../../functions/getColors'
 
 const meta: Meta<TInputRootProps> = {
 	title: 'Inputs/Root',
@@ -31,15 +31,7 @@ export const Default: Story = {
 		},
 		color: {
 			control: 'select',
-			options: [
-				'red',
-				'blue',
-				'green',
-				'yellow',
-				'purple',
-				'gray',
-				'pink',
-			] as TInputRootProps['color'][],
+			options: getColors(),
 		},
 		disabled: { control: 'boolean' },
 		autoFocus: { control: 'boolean' },

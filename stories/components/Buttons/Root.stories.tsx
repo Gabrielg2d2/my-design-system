@@ -4,6 +4,7 @@ import {
 	ButtonRoot,
 	type TButtonRootProps,
 } from '../../../src/components/Buttons/Root'
+import { getColors } from '../../functions/getColors'
 
 const meta: Meta<TButtonRootProps> = {
 	title: 'Buttons/Root',
@@ -32,13 +33,7 @@ export const Default: Story = {
 			control: { type: 'select' },
 		},
 		color: {
-			options: [
-				'gray',
-				'yellow',
-				'blue',
-				'red',
-				'green',
-			] satisfies TButtonRootProps['color'][],
+			options: getColors(),
 			control: { type: 'select' },
 		},
 		loading: {
