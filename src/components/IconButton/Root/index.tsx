@@ -1,12 +1,18 @@
-import { MagnifyingGlassIcon } from '@radix-ui/react-icons'
+import * as Icons from '@radix-ui/react-icons'
 import { IconButton, type IconButtonProps } from '@radix-ui/themes'
 
-export type TIconButtonRootProps = IconButtonProps
+type NamesIcon = keyof typeof Icons
 
-export function IconButtonRoot() {
+export type TIconButtonRootProps = IconButtonProps & {
+	name: NamesIcon
+}
+
+export function IconButtonRoot({ name, ...props }: TIconButtonRootProps) {
+	const IconComponent = Icons[name]
+
 	return (
-		<IconButton>
-			<MagnifyingGlassIcon width="18" height="18" />
+		<IconButton {...props}>
+			{IconComponent ? <IconComponent width="18" height="18" /> : null}
 		</IconButton>
 	)
 }
