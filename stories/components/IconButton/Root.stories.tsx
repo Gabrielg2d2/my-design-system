@@ -1,4 +1,3 @@
-import * as Icons from '@radix-ui/react-icons'
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 import {
@@ -6,6 +5,7 @@ import {
 	type TIconButtonRootProps,
 } from '../../../src/components/IconButton/Root'
 import { getColors } from '../../functions/getColors'
+import { getNamesIcon } from '../../functions/getNameIcon'
 
 const meta: Meta<TIconButtonRootProps> = {
 	title: 'IconButton/Root',
@@ -21,7 +21,7 @@ export const Default: Story = {
 	argTypes: {
 		name: {
 			control: { type: 'select' },
-			options: Object.keys(Icons),
+			options: getNamesIcon(),
 		},
 		sizeIcon: {
 			control: { type: 'number' },

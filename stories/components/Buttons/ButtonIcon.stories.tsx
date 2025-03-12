@@ -5,6 +5,7 @@ import {
 	type TButtonIconProps,
 } from '../../../src/components/Buttons/ButtonIcon'
 
+import { getNamesIcon } from '../../functions/getNameIcon'
 import * as RootStories from './Root.stories'
 
 const meta: Meta<TButtonIconProps> = {
@@ -15,6 +16,18 @@ const meta: Meta<TButtonIconProps> = {
 			control: 'boolean',
 			description: 'Show loading icon',
 			defaultValue: false,
+		},
+		iconLeftName: {
+			control: 'select',
+			options: getNamesIcon(),
+			description: 'Name icon left',
+			defaultValue: 'AlignBottomIcon',
+		},
+		iconRightName: {
+			control: 'select',
+			options: getNamesIcon(),
+			description: 'Name icon right',
+			defaultValue: 'AlignBottomIcon',
 		},
 	},
 	args: {
@@ -43,7 +56,7 @@ export const Disabled: Story = {
 export const IconLeft: Story = {
 	render: (args) => {
 		return (
-			<ButtonIcon {...args} iconLeftName="AccessibilityIcon">
+			<ButtonIcon iconLeftName="AccessibilityIcon" {...args}>
 				Text Button
 			</ButtonIcon>
 		)
@@ -54,12 +67,12 @@ export const SpaceBetween: Story = {
 	render: (args) => {
 		return (
 			<ButtonIcon
-				{...args}
 				width={500}
 				iconLeftName="AlignBottomIcon"
 				propsStyle={{
 					justifyContent: 'space-between',
 				}}
+				{...args}
 			>
 				Text Button
 			</ButtonIcon>
@@ -70,7 +83,7 @@ export const SpaceBetween: Story = {
 export const IconLeftLoading: Story = {
 	render: (args) => {
 		return (
-			<ButtonIcon {...args} loadingIcon iconLeftName="AlignBottomIcon">
+			<ButtonIcon loadingIcon iconLeftName="AlignBottomIcon" {...args}>
 				Text Button
 			</ButtonIcon>
 		)
@@ -80,7 +93,7 @@ export const IconLeftLoading: Story = {
 export const IconRight: Story = {
 	render: (args) => {
 		return (
-			<ButtonIcon {...args} iconRightName="BorderDashedIcon">
+			<ButtonIcon iconRightName="BorderDashedIcon" {...args}>
 				Text Button
 			</ButtonIcon>
 		)
@@ -90,7 +103,7 @@ export const IconRight: Story = {
 export const IconRightLoading: Story = {
 	render: (args) => {
 		return (
-			<ButtonIcon {...args} loadingIcon iconRightName="AngleIcon">
+			<ButtonIcon loadingIcon iconRightName="AngleIcon" {...args}>
 				Text Button
 			</ButtonIcon>
 		)
@@ -101,9 +114,9 @@ export const IconLeftAndRight: Story = {
 	render: (args) => {
 		return (
 			<ButtonIcon
-				{...args}
 				iconLeftName="ViewGridIcon"
 				iconRightName="CameraIcon"
+				{...args}
 			>
 				Text Button
 			</ButtonIcon>
@@ -115,10 +128,10 @@ export const IconLeftAndRightLoading: Story = {
 	render: (args) => {
 		return (
 			<ButtonIcon
-				{...args}
 				loadingIcon
 				iconLeftName="Link1Icon"
 				iconRightName="ValueNoneIcon"
+				{...args}
 			>
 				Text Button
 			</ButtonIcon>
