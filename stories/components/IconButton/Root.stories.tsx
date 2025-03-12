@@ -22,5 +22,12 @@ export const Default: Story = {
 			control: { type: 'select' },
 			options: Object.keys(Icons),
 		},
+		sizeIcon: {
+			control: { type: 'number' },
+		},
+	},
+	args: {
+		name: 'BackpackIcon',
+		sizeIcon: 20,
 	},
 }
