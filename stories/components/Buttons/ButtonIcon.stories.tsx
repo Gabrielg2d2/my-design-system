@@ -5,7 +5,6 @@ import {
 	type TButtonIconProps,
 } from '../../../src/components/Buttons/ButtonIcon'
 
-import { BookmarkIcon } from '@radix-ui/react-icons'
 import * as RootStories from './Root.stories'
 
 const meta: Meta<TButtonIconProps> = {
@@ -33,14 +32,18 @@ export const Disabled: Story = {
 	},
 
 	render: (args) => {
-		return <ButtonIcon {...args}>Text Button</ButtonIcon>
+		return (
+			<ButtonIcon iconLeftName="AccessibilityIcon" {...args}>
+				Text Button
+			</ButtonIcon>
+		)
 	},
 }
 
 export const IconLeft: Story = {
 	render: (args) => {
 		return (
-			<ButtonIcon {...args} iconLeft={<BookmarkIcon />}>
+			<ButtonIcon {...args} iconLeftName="AccessibilityIcon">
 				Text Button
 			</ButtonIcon>
 		)
@@ -53,7 +56,7 @@ export const SpaceBetween: Story = {
 			<ButtonIcon
 				{...args}
 				width={500}
-				iconLeft={<BookmarkIcon />}
+				iconLeftName="AlignBottomIcon"
 				propsStyle={{
 					justifyContent: 'space-between',
 				}}
@@ -67,7 +70,7 @@ export const SpaceBetween: Story = {
 export const IconLeftLoading: Story = {
 	render: (args) => {
 		return (
-			<ButtonIcon {...args} loadingIcon iconLeft={<BookmarkIcon />}>
+			<ButtonIcon {...args} loadingIcon iconLeftName="AlignBottomIcon">
 				Text Button
 			</ButtonIcon>
 		)
@@ -77,7 +80,7 @@ export const IconLeftLoading: Story = {
 export const IconRight: Story = {
 	render: (args) => {
 		return (
-			<ButtonIcon {...args} iconRight={<BookmarkIcon />}>
+			<ButtonIcon {...args} iconRightName="BorderDashedIcon">
 				Text Button
 			</ButtonIcon>
 		)
@@ -87,7 +90,7 @@ export const IconRight: Story = {
 export const IconRightLoading: Story = {
 	render: (args) => {
 		return (
-			<ButtonIcon {...args} loadingIcon iconRight={<BookmarkIcon />}>
+			<ButtonIcon {...args} loadingIcon iconRightName="AngleIcon">
 				Text Button
 			</ButtonIcon>
 		)
@@ -99,8 +102,8 @@ export const IconLeftAndRight: Story = {
 		return (
 			<ButtonIcon
 				{...args}
-				iconLeft={<BookmarkIcon />}
-				iconRight={<BookmarkIcon />}
+				iconLeftName="ViewGridIcon"
+				iconRightName="CameraIcon"
 			>
 				Text Button
 			</ButtonIcon>
@@ -114,8 +117,8 @@ export const IconLeftAndRightLoading: Story = {
 			<ButtonIcon
 				{...args}
 				loadingIcon
-				iconLeft={<BookmarkIcon />}
-				iconRight={<BookmarkIcon />}
+				iconLeftName="Link1Icon"
+				iconRightName="ValueNoneIcon"
 			>
 				Text Button
 			</ButtonIcon>
