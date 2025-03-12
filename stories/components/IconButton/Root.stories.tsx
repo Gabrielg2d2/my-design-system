@@ -5,6 +5,7 @@ import {
 	IconButtonRoot,
 	type TIconButtonRootProps,
 } from '../../../src/components/IconButton/Root'
+import { getColors } from '../../functions/getColors'
 
 const meta: Meta<TIconButtonRootProps> = {
 	title: 'IconButton/Root',
@@ -25,9 +26,14 @@ export const Default: Story = {
 		sizeIcon: {
 			control: { type: 'number' },
 		},
+		color: {
+			control: { type: 'select' },
+			options: getColors(),
+		},
 	},
 	args: {
 		name: 'BackpackIcon',
 		sizeIcon: 20,
+		color: 'yellow',
 	},
 }
