@@ -1,3 +1,4 @@
+import * as Icons from '@radix-ui/react-icons'
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 import {
@@ -16,5 +17,10 @@ export default meta
 type Story = StoryObj<TIconButtonRootProps>
 
 export const Default: Story = {
-	argTypes: {},
+	argTypes: {
+		name: {
+			control: { type: 'select' },
+			options: Object.keys(Icons),
+		},
+	},
 }
