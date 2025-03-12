@@ -1,21 +1,21 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 import {
-	IconButtonRoot,
-	type TIconButtonRootProps,
-} from '../../../src/components/IconButton/Root'
+	IconRoot,
+	type TIconRootProps,
+} from '../../../src/components/Icon/Root'
 import { getColors } from '../../functions/getColors'
 import { getNamesIcon } from '../../functions/getNameIcon'
 
-const meta: Meta<TIconButtonRootProps> = {
-	title: 'IconButton/Root',
-	component: (args: TIconButtonRootProps) => {
-		return <IconButtonRoot {...args} />
+const meta: Meta<TIconRootProps> = {
+	title: 'Icon/Root',
+	component: (args: TIconRootProps) => {
+		return <IconRoot {...args} />
 	},
 }
 
 export default meta
-type Story = StoryObj<TIconButtonRootProps>
+type Story = StoryObj<TIconRootProps>
 
 export const Default: Story = {
 	argTypes: {
@@ -34,6 +34,6 @@ export const Default: Story = {
 	args: {
 		name: 'BackpackIcon',
 		sizeIcon: 20,
-		// color: 'yellow',
+		color: 'yellow',
 	},
 }
