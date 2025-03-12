@@ -34,6 +34,6 @@ export const Default: Story = {
 	args: {
 		name: 'BackpackIcon',
 		sizeIcon: 20,
-		// color: 'yellow',
+		color: 'yellow',
 	},
 }
