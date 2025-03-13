@@ -47,3 +47,21 @@ export const Size: Story = {
 		color: 'yellow',
 	},
 }
+
+export const Disabled: Story = {
+    args: {
+        name: "BackpackIcon",
+        sizeIcon: 20,
+        color: "yellow",
+        disabled: true
+    }
+};
+
+export const Loading: Story = {
+    args: {
+        name: "BackpackIcon",
+        sizeIcon: 20,
+        color: "yellow",
+        loading: true
+    }
+};
