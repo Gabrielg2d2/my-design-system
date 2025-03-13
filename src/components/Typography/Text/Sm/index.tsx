@@ -6,7 +6,7 @@ export type TTextSmProps = Omit<TProps, 'size'>
 
 export function TextSm(props: TProps) {
 	return (
-		<TextRoot size="1" {...props}>
+		<TextRoot size="2" {...props}>
 			{props.children}
 		</TextRoot>
 	)
