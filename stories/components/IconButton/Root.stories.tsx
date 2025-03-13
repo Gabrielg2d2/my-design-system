@@ -30,6 +30,12 @@ export const Default: Story = {
 			control: { type: 'select' },
 			options: getColors(),
 		},
+		disabled: {
+			control: { type: 'boolean' },
+		},
+		loading: {
+			control: { type: 'boolean' },
+		},
 	},
 	args: {
 		name: 'BackpackIcon',
