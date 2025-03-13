@@ -25,25 +25,25 @@ type Story = StoryObj<TIconRootProps>
 export const Default: Story = {}
 
 export const Icon: Story = {
-    args: {
-        name: "CubeIcon",
-        sizeIcon: 20,
-        color: "yellow"
-    }
-};
+	args: {
+		name: 'CubeIcon',
+		sizeIcon: 20,
+		color: 'yellow',
+	},
+}
 
 export const Size: Story = {
-    args: {
-        name: "BackpackIcon",
-        sizeIcon: 67,
-        color: "yellow"
-    }
-};
+	args: {
+		name: 'BackpackIcon',
+		sizeIcon: 67,
+		color: 'yellow',
+	},
+}
 
 export const Color: Story = {
-    args: {
-        name: "BackpackIcon",
-        sizeIcon: 20,
-        color: "lime"
-    }
-};
+	args: {
+		name: 'BackpackIcon',
+		sizeIcon: 20,
+		color: 'lime',
+	},
+}
