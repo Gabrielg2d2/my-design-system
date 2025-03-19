@@ -3,7 +3,7 @@ import React from 'react'
 import {
 	type TTextDefaultProps,
 	TextDefault,
-} from '../../../src/components/Typography/Text/Default'
+} from '../../../../src/components/Typography/Text/Default'
 
 import * as RootStories from './Root.stories'
 
