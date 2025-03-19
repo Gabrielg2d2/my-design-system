@@ -60,7 +60,8 @@ export const Default: Story = {
 		},
 		wrap: {
 			control: {
-				type: 'boolean',
+				type: 'select',
+				options: ['balance', 'nowrap', 'pretty', 'wrap'],
 			},
 		},
 		as: {
@@ -69,5 +70,16 @@ export const Default: Story = {
 				options: ['p', 'span', 'div', 'label'],
 			},
 		},
+	},
+	args: {
+		color: 'gray',
+		size: '3',
+		highContrast: false,
+		weight: 'regular',
+		align: 'left',
+		trim: 'normal',
+		truncate: false,
+		wrap: 'wrap',
+		as: 'p',
 	},
 }
