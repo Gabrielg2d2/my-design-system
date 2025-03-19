@@ -8,7 +8,7 @@ import {
 import * as RootStories from './Root.stories'
 
 const meta: Meta<TTextMdProps> = {
-	title: 'Typography/Md',
+	title: 'Typography/Text/Md',
 	component: (args: TTextMdProps) => {
 		return <TextMd {...args}>Text Default</TextMd>
 	},

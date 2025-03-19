@@ -6,7 +6,7 @@ import {
 } from '../../../../src/components/Typography/Text/Root'
 
 const meta: Meta<TTextRootProps> = {
-	title: 'Typography/Root',
+	title: 'Typography/Text/Root',
 	component: (args: TTextRootProps) => {
 		return <TextRoot {...args}>Text Root</TextRoot>
 	},
