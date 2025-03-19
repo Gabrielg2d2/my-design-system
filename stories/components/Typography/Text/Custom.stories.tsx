@@ -23,3 +23,15 @@ export default meta
 type Story = StoryObj<TTextCustomProps>
 
 export const Default: Story = {}
+
+export const Color: Story = {
+	args: {
+		color: 'red',
+	},
+}
+
+export const Size: Story = {
+	args: {
+		size: '5',
+	},
+}
