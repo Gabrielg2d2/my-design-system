@@ -24,5 +24,11 @@ export const Default: Story = {
 				options: getColors(),
 			},
 		},
+		size: {
+			control: {
+				type: 'select',
+				options: ['sm', 'md', 'lg'],
+			},
+		},
 	},
 }
