@@ -4,13 +4,12 @@ import {
 	type TTextCustomProps,
 	TextCustom,
 } from '../../../../src/components/Typography/Text/Custom'
-
 import * as RootStories from './Root.stories'
 
 const meta: Meta<TTextCustomProps> = {
 	title: 'Typography/Text/Custom',
 	component: (args: TTextCustomProps) => {
-		return <TextCustom {...args}>Text Default</TextCustom>
+		return <TextCustom {...args}>Text Custom</TextCustom>
 	},
 	argTypes: {
 		...RootStories.Default.argTypes,
