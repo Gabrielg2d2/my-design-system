@@ -1,7 +1,7 @@
 import { type TTextRootProps, TextRoot } from '../Root'
 
-export type TTextDefaultProps = TTextRootProps
+export type TTextCustomProps = TTextRootProps
 
-export function TextDefault(props: TTextDefaultProps) {
+export function TextCustom(props: TTextCustomProps) {
 	return <TextRoot {...props}>{props.children}</TextRoot>
 }

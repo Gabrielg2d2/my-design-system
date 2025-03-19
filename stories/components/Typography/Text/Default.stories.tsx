@@ -1,16 +1,16 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 import {
-	type TTextDefaultProps,
-	TextDefault,
-} from '../../../../src/components/Typography/Text/Default'
+	type TTextCustomProps,
+	TextCustom,
+} from '../../../../src/components/Typography/Text/Custom'
 
 import * as RootStories from './Root.stories'
 
-const meta: Meta<TTextDefaultProps> = {
-	title: 'Typography/Text/Default',
-	component: (args: TTextDefaultProps) => {
-		return <TextDefault {...args}>Text Default</TextDefault>
+const meta: Meta<TTextCustomProps> = {
+	title: 'Typography/Text/Custom',
+	component: (args: TTextCustomProps) => {
+		return <TextCustom {...args}>Text Default</TextCustom>
 	},
 	argTypes: {
 		...RootStories.Default.argTypes,
@@ -21,6 +21,6 @@ const meta: Meta<TTextDefaultProps> = {
 }
 
 export default meta
-type Story = StoryObj<TTextDefaultProps>
+type Story = StoryObj<TTextCustomProps>
 
 export const Default: Story = {}
