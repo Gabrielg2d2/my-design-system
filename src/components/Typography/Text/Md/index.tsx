@@ -2,7 +2,7 @@ import { type TTextRootProps, TextRoot } from '../Root'
 
 type TProps = TTextRootProps
 
-export type TTextMdProps = Omit<TProps, 'size'>
+export type TTextMdProps = TProps
 
 export function TextMd(props: TProps) {
 	return (
