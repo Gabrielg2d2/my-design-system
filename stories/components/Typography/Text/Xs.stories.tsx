@@ -24,3 +24,9 @@ export default meta
 type Story = StoryObj<TTextXsProps>
 
 export const Default: Story = {}
+
+export const Color: Story = {
+	args: {
+		color: 'blue',
+	},
+}
