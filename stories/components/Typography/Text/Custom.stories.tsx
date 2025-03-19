@@ -35,3 +35,9 @@ export const Color: Story = {
 		color: 'lime',
 	},
 }
+
+export const HighContrast: Story = {
+	args: {
+		highContrast: true,
+	},
+}
