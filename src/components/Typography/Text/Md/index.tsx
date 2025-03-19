@@ -5,8 +5,10 @@ type TProps = TTextRootProps
 export type TTextMdProps = TProps
 
 export function TextMd(props: TProps) {
+	const { size, ...rest } = props
+
 	return (
-		<TextRoot size="3" {...props}>
+		<TextRoot size="3" {...rest}>
 			{props.children}
 		</TextRoot>
 	)
