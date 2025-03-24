@@ -1,9 +1,9 @@
-import { type TTextRootProps, TextRoot } from '../Root'
+import { HeaderRoot, type THeaderRootProps } from '../Root'
 
-type TProps = TTextRootProps
+type TProps = THeaderRootProps
 
-export type TTextCustomProps = TProps
+export type THeaderCustomProps = TProps
 
-export function TextCustom(props: TProps) {
-	return <TextRoot {...props}>{props.children}</TextRoot>
+export function HeaderCustom(props: TProps) {
+	return <HeaderRoot {...props}>{props.children}</HeaderRoot>
 }

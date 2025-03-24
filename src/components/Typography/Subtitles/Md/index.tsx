@@ -1,15 +1,15 @@
-import { SubtitlesRoot, type TSubtitlesRootProps } from '../Root'
+import { SubtitleRoot, type TSubtitleRootProps } from '../Root'
 
-type TProps = TSubtitlesRootProps
+type TProps = TSubtitleRootProps
 
 export type TTextXsProps = TProps
 
-export function SubtitlesMd(props: TProps) {
+export function SubtitleMd(props: TProps) {
 	const { size, ...rest } = props
 
 	return (
-		<SubtitlesRoot size="6" {...rest}>
+		<SubtitleRoot size="6" {...rest}>
 			{props.children}
-		</SubtitlesRoot>
+		</SubtitleRoot>
 	)
 }

@@ -1,7 +1,7 @@
-import { Text, type TextProps } from '@radix-ui/themes'
+import { Heading, type HeadingProps } from '@radix-ui/themes'
 
-export type TTextRootProps = TextProps
+export type THeaderRootProps = HeadingProps
 
-export function TextRoot(props: TTextRootProps) {
-	return <Text {...props}>{props.children}</Text>
+export function HeaderRoot(props: THeaderRootProps) {
+	return <Heading {...props}>{props.children}</Heading>
 }

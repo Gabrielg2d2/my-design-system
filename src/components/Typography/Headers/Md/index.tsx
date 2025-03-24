@@ -1,15 +1,15 @@
-import { type TTextRootProps, TextRoot } from '../Root'
+import { HeaderRoot, type THeaderRootProps } from '../Root'
 
-type TProps = TTextRootProps
+type TProps = THeaderRootProps
 
-export type TTextMdProps = TProps
+export type THeaderMdProps = TProps
 
-export function TextMd(props: TProps) {
+export function HeaderMd(props: TProps) {
 	const { size, ...rest } = props
 
 	return (
-		<TextRoot size="3" {...rest}>
+		<HeaderRoot size="8" {...rest}>
 			{props.children}
-		</TextRoot>
+		</HeaderRoot>
 	)
 }

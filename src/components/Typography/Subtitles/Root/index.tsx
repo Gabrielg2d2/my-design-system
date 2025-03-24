@@ -1,7 +1,7 @@
 import { Text, type TextProps } from '@radix-ui/themes'
 
-export type TSubtitlesRootProps = TextProps
+export type TSubtitleRootProps = TextProps
 
-export function SubtitlesRoot(props: TSubtitlesRootProps) {
+export function SubtitleRoot(props: TSubtitleRootProps) {
 	return <Text {...props}>{props.children}</Text>
 }
