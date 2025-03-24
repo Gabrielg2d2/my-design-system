@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
+import React from 'react'
 import {
 	type TTextRootProps,
 	TextRoot,
@@ -7,7 +8,9 @@ import { getColors } from '../../../functions/getColors'
 
 const meta: Meta<TTextRootProps> = {
 	title: 'Typography/Text/Root',
-	component: TextRoot,
+	component: (args: TTextRootProps) => {
+		return <TextRoot {...args}>Text Default</TextRoot>
+	},
 }
 
 export default meta
