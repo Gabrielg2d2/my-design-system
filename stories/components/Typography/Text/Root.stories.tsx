@@ -71,7 +71,6 @@ export const Default: Story = {
 	},
 	args: {
 		color: 'gray',
-		size: '3',
 		highContrast: false,
 		weight: 'regular',
 		align: 'left',
