@@ -4,7 +4,7 @@ import {
 	ButtonRoot,
 	type TButtonRootProps,
 } from '../../../src/components/Buttons/Root'
-import { getColors } from '../../functions/getColors'
+import { getColors } from '../../../src/functions/getColors'
 
 const meta: Meta<TButtonRootProps> = {
 	title: 'Buttons/Root',

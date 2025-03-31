@@ -4,7 +4,7 @@ import {
 	SubtitleRoot,
 	type TSubtitleRootProps,
 } from '../../../../src/components/Typography/Subtitles/Root'
-import { getColors } from '../../../functions/getColors'
+import { getColors } from '../../../../src/functions/getColors'
 
 const meta: Meta<TSubtitleRootProps> = {
 	title: 'Typography/Subtitles/Root',

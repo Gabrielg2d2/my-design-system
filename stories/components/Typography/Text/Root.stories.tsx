@@ -4,7 +4,7 @@ import {
 	type TTextRootProps,
 	TextRoot,
 } from '../../../../src/components/Typography/Text/Root'
-import { getColors } from '../../../functions/getColors'
+import { getColors } from '../../../../src/functions/getColors'
 
 const meta: Meta<TTextRootProps> = {
 	title: 'Typography/Text/Root',

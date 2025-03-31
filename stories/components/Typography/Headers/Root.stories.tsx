@@ -4,7 +4,7 @@ import {
 	HeaderRoot,
 	type THeaderRootProps,
 } from '../../../../src/components/Typography/Headers/Root'
-import { getColors } from '../../../functions/getColors'
+import { getColors } from '../../../../src/functions/getColors'
 
 const meta: Meta<THeaderRootProps> = {
 	title: 'Typography/Headers/Root',

@@ -4,7 +4,7 @@ import {
 	InputRoot,
 	type TInputRootProps,
 } from '../../../src/components/Inputs/Root'
-import { getColors } from '../../functions/getColors'
+import { getColors } from '../../../src/functions/getColors'
 
 const meta: Meta<TInputRootProps> = {
 	title: 'Inputs/Root',
