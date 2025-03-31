@@ -5,7 +5,7 @@ import {
 	type TButtonIconProps,
 } from '../../../src/components/Buttons/ButtonIcon'
 
-import { getNamesIcon } from '../../functions/getNameIcon'
+import { getNamesIcon } from '../../../src/functions/getNameIcon'
 import * as RootStories from './Root.stories'
 
 const meta: Meta<TButtonIconProps> = {

@@ -4,8 +4,8 @@ import {
 	IconRoot,
 	type TIconRootProps,
 } from '../../../src/components/Icon/Root'
-import { getColors } from '../../functions/getColors'
-import { getNamesIcon } from '../../functions/getNameIcon'
+import { getColors } from '../../../src/functions/getColors'
+import { getNamesIcon } from '../../../src/functions/getNameIcon'
 
 const meta: Meta<TIconRootProps> = {
 	title: 'Icon/Root',
