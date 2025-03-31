@@ -9,7 +9,7 @@ import { getColors } from '../../../functions/getColors'
 const meta: Meta<THeaderRootProps> = {
 	title: 'Typography/Headers/Root',
 	component: (args: THeaderRootProps) => {
-		return <HeaderRoot {...args}>Text Default</HeaderRoot>
+		return <HeaderRoot {...args}>Text Root</HeaderRoot>
 	},
 }
 
