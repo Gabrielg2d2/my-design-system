@@ -49,7 +49,7 @@ const preview: Preview = {
 		theme: {
 			name: 'Theme',
 			description: 'Choose between light and dark theme',
-			defaultValue: 'light',
+			defaultValue: 'dark',
 			toolbar: {
 				icon: 'circlehollow',
 				items: [
