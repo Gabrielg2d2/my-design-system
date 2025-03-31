@@ -1,15 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import React from 'react'
 import {
-	SubtitleCustom,
-	type TSubtitleCustomProps,
-} from '../../../../src/components/Typography/Subtitles/Custom'
+	SubtitleSm,
+	type TSubtitleSmProps,
+} from '../../../../src/components/Typography/Subtitles/Sm'
 import * as RootStories from './Root.stories'
 
-const meta: Meta<TSubtitleCustomProps> = {
-	title: 'Typography/Subtitles/Custom',
-	component: (args: TSubtitleCustomProps) => {
-		return <SubtitleCustom {...args}>Subtitle Custom</SubtitleCustom>
+const meta: Meta<TSubtitleSmProps> = {
+	title: 'Typography/Subtitles/Sm',
+	component: (args: TSubtitleSmProps) => {
+		return <SubtitleSm {...args}>Subtitle Sm</SubtitleSm>
 	},
 	argTypes: {
 		...RootStories.Default.argTypes,
@@ -20,7 +20,7 @@ const meta: Meta<TSubtitleCustomProps> = {
 }
 
 export default meta
-type Story = StoryObj<TSubtitleCustomProps>
+type Story = StoryObj<TSubtitleSmProps>
 
 export const Default: Story = {}
 

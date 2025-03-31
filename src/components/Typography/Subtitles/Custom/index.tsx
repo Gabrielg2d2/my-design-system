@@ -2,8 +2,8 @@ import { SubtitleRoot, type TSubtitleRootProps } from '../Root'
 
 type TProps = TSubtitleRootProps
 
-export type TSubtitlesCustomProps = TProps
+export type TSubtitleCustomProps = TProps
 
-export function SubtitlesCustom(props: TProps) {
+export function SubtitleCustom(props: TProps) {
 	return <SubtitleRoot {...props}>{props.children}</SubtitleRoot>
 }
