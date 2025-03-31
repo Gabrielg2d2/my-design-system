@@ -28,7 +28,7 @@ interface BackgroundGridProps extends ComponentProps<'div'> {
 	color?: string
 	rotation?: number
 	gradientDirection?: GradientDirectionKey
-	gradientColors?: string[] // Ex: ['#0F1216', 'rgb(29, 75, 135)']
+	gradientColors?: string[]
 }
 export function BackgroundGrid({
 	opacity = 0.01,
@@ -36,7 +36,11 @@ export function BackgroundGrid({
 	color = 'rgba(75, 127, 205, OPACITY)',
 	rotation = 0,
 	gradientDirection = 'topRight',
-	gradientColors = ['#0F1216', 'rgba(40, 39, 89, 0.96)'],
+	gradientColors = [
+		'rgb(15, 18, 22) 30%',
+		'rgb(28, 57, 96) 80%',
+		'rgb(18, 76, 168) 100%',
+	],
 	style,
 	...props
 }: BackgroundGridProps) {
