@@ -9,7 +9,7 @@ import { getColors } from '../../../functions/getColors'
 const meta: Meta<TSubtitleRootProps> = {
 	title: 'Typography/Subtitles/Root',
 	component: (args: TSubtitleRootProps) => {
-		return <SubtitleRoot {...args}>Text Root</SubtitleRoot>
+		return <SubtitleRoot {...args}>Subtitle Root</SubtitleRoot>
 	},
 }
 
