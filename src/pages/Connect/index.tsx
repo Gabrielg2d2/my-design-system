@@ -101,11 +101,14 @@ export function PageConnect(props: any) {
 					/>
 
 					<ButtonIcon
-						color="indigo"
+						mt="2"
+						color="gray"
 						style={{
 							justifyContent: 'space-between',
+							color: '#6F9DE2',
 						}}
 						iconRightName="ArrowRightIcon"
+						variant="soft"
 					>
 						Confirmar
 					</ButtonIcon>
