@@ -37,8 +37,8 @@ export function BackgroundGrid({
 	rotation = 0,
 	gradientDirection = 'topRight',
 	gradientColors = [
-		'rgb(15, 18, 22) 30%',
-		'rgb(28, 57, 96) 80%',
+		'rgb(23, 26, 30) 70%',
+		'rgb(28, 52, 82) 90%',
 		'rgb(18, 76, 168) 100%',
 	],
 	style,
