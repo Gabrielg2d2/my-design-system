@@ -1,5 +1,14 @@
 import { Flex } from '@radix-ui/themes'
-import { HeaderSm, SubtitleLg } from '../../components'
+import {
+	ButtonIcon,
+	HeaderSm,
+	IconDefault,
+	InputIcon,
+	SubtitleLg,
+	SubtitleSm,
+	TextSm,
+	TextXs,
+} from '../../components'
 import ImgTitle from './assets/devstage.svg'
 import { BackgroundGrid } from './components/BackgroundGrid'
 
@@ -27,6 +36,79 @@ export function PageConnect(props: any) {
 					>
 						Summit 2025
 					</SubtitleLg>
+				</Flex>
+
+				<Flex
+					direction="column"
+					gap="4"
+					width="370px"
+					p="5"
+					style={{ backgroundColor: '#191D24', borderRadius: '16px' }}
+				>
+					<Flex direction="row" justify="between" align="center">
+						<SubtitleSm
+							style={{
+								fontWeight: 'bold',
+							}}
+						>
+							Sobre o evento
+						</SubtitleSm>
+
+						<TextXs
+							style={{
+								color: '#9871F3',
+							}}
+						>
+							AO VIVO
+						</TextXs>
+					</Flex>
+
+					<TextSm color="gray">
+						Um evento feito por e para pessoas desenvolvedoras apaixonadas por
+						criar soluções inovadoras e compartilhar conhecimento. Vamos
+						mergulhar nas tendências mais recentes em desenvolvimento de
+						software, arquitetura de sistemas e tecnologias emergentes, com
+						palestras, workshops e hackathons.
+					</TextSm>
+
+					<TextSm color="gray">
+						Dias 15 a 17 de março | Das 18h às 21h | Online & Gratuito
+					</TextSm>
+				</Flex>
+
+				<Flex
+					direction="column"
+					gap="4"
+					width="370px"
+					p="5"
+					style={{ backgroundColor: '#191D24', borderRadius: '16px' }}
+				>
+					<SubtitleSm
+						style={{
+							fontWeight: 'bold',
+						}}
+					>
+						Inscrição
+					</SubtitleSm>
+
+					<InputIcon
+						iconLeft={<IconDefault name="EnvelopeClosedIcon" />}
+						placeholder="E-mail"
+					/>
+					<InputIcon
+						iconLeft={<IconDefault name="PaperPlaneIcon" />}
+						placeholder="Telefone"
+					/>
+
+					<ButtonIcon
+						color="indigo"
+						style={{
+							justifyContent: 'space-between',
+						}}
+						iconRightName="ArrowRightIcon"
+					>
+						Confirmar
+					</ButtonIcon>
 				</Flex>
 			</Flex>
 		</BackgroundGrid>
