@@ -4,7 +4,7 @@ import { CardRegistration } from './components/CardRegistration'
 import { Container } from './components/Container'
 import { TitleAndSubtitle } from './components/TitleAndSuubtitle'
 
-export function PageConnect(props: any) {
+export function PageConnectRegistration(props: any) {
 	return (
 		<BackgroundGrid>
 			<Container>
